@@ -10,11 +10,26 @@ import Foundation
 import UIKit
 
 class LoginSignUpViewController: UIViewController {
+    let loginView = LoginView(frame: .zero)
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        self.view.backgroundColor = .red
+        
+        setupLoginView()
+        
+    }
+    
+    
+    func setupLoginView(){
+        view.addSubview(loginView)
+        
+        NSLayoutConstraint.activate([
+            loginView.topAnchor.constraint(equalTo: self.view.topAnchor),
+            loginView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
+            loginView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
+            loginView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor)
+        ])
     }
 
 
