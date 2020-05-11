@@ -17,8 +17,6 @@ class LoginView: UIView {
     // initialize emailTextField
     let emailTextField: TextField = {
          let textfield = TextField.textBox(.white, UIColor(hex: 0xed6663), 0, .clear, "Email", 20, "emailIcon")
-         textfield.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width / 1.2).isActive = true
-         textfield.heightAnchor.constraint(equalToConstant: 30).isActive = true
          
         return textfield
      }()
@@ -27,8 +25,6 @@ class LoginView: UIView {
      
      let passwordTextField: TextField = {
          let textfield = TextField.textBox(.white, UIColor(hex: 0xed6663), 0, .clear, "Password", 20, "passwordIcon")
-         textfield.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width / 1.2).isActive = true
-         textfield.heightAnchor.constraint(equalToConstant: 30).isActive = true
          
          textfield.isSecureTextEntry = true
          
@@ -87,13 +83,13 @@ class LoginView: UIView {
         
         NSLayoutConstraint.activate([
             emailTextField.widthAnchor.constraint(equalToConstant: screen.bounds.width / 1.5),
-            emailTextField.heightAnchor.constraint(equalToConstant: 25),
+            emailTextField.heightAnchor.constraint(equalToConstant: 30),
             emailTextField.centerXAnchor.constraint(equalTo: self.centerXAnchor),
             emailTextField.topAnchor.constraint(equalTo: self.topAnchor, constant: screen.bounds.width / 1.5),
             
             
             passwordTextField.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width / 1.5),
-            passwordTextField.heightAnchor.constraint(equalToConstant: 25),
+            passwordTextField.heightAnchor.constraint(equalToConstant: 30),
             passwordTextField.centerXAnchor.constraint(equalTo: self.centerXAnchor),
             passwordTextField.topAnchor.constraint(equalTo: self.emailTextField.bottomAnchor, constant: 20),
             

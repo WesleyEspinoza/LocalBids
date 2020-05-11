@@ -12,36 +12,29 @@ import UIKit
 class RegisterView: UIView {
     var delegate: LoginSignUpViewController? = nil
     
-    let emailTextField: UITextField = {
-        let textField = UITextField()
-        textField.translatesAutoresizingMaskIntoConstraints = false
-        textField.backgroundColor = .white
-        textField.textColor = .black
-        textField.attributedPlaceholder =
-            NSAttributedString(string: "Email", attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
-        return textField
-    }()
+    // initialize emailTextField
+    let emailTextField: TextField = {
+         let textfield = TextField.textBox(.white, UIColor(hex: 0xed6663), 0, .clear, "Email", 20, "emailIcon")
+         
+        return textfield
+     }()
+     
+     
+     
+     let passwordTextField: TextField = {
+         let textfield = TextField.textBox(.white, UIColor(hex: 0xed6663), 0, .clear, "Password", 20, "passwordIcon")
+         
+         textfield.isSecureTextEntry = true
+         
+        return textfield
+     }()
     
-    let passwordTextField: UITextField = {
-        let textField = UITextField()
-        textField.translatesAutoresizingMaskIntoConstraints = false
-        textField.backgroundColor = .white
-        textField.textColor = .black
-        textField.isSecureTextEntry = true
-        textField.attributedPlaceholder =
-            NSAttributedString(string: "Password", attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
-        return textField
-    }()
-    
-    let confirmPasswordTextField: UITextField = {
-        let textField = UITextField()
-        textField.translatesAutoresizingMaskIntoConstraints = false
-        textField.backgroundColor = .white
-        textField.textColor = .black
-        textField.isSecureTextEntry = true
-        textField.attributedPlaceholder =
-            NSAttributedString(string: "Confirm Password", attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
-        return textField
+    let confirmPasswordTextField: TextField = {
+        let textfield = TextField.textBox(.white, UIColor(hex: 0xed6663), 0, .clear, "Confirm Password", 20, "passwordIcon")
+        
+        textfield.isSecureTextEntry = true
+        
+       return textfield
     }()
     
     
@@ -97,20 +90,20 @@ class RegisterView: UIView {
         
         NSLayoutConstraint.activate([
             emailTextField.widthAnchor.constraint(equalToConstant: screen.bounds.width / 1.5),
-            emailTextField.heightAnchor.constraint(equalToConstant: 25),
+            emailTextField.heightAnchor.constraint(equalToConstant: 30),
             emailTextField.centerXAnchor.constraint(equalTo: self.centerXAnchor),
             emailTextField.topAnchor.constraint(equalTo: self.topAnchor, constant: screen.bounds.width / 1.5),
             
             
             passwordTextField.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width / 1.5),
-            passwordTextField.heightAnchor.constraint(equalToConstant: 25),
+            passwordTextField.heightAnchor.constraint(equalToConstant: 30),
             passwordTextField.centerXAnchor.constraint(equalTo: self.centerXAnchor),
             passwordTextField.topAnchor.constraint(equalTo: self.emailTextField.bottomAnchor, constant: 20),
             
             confirmPasswordTextField.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 20),
             confirmPasswordTextField.centerXAnchor.constraint(equalTo: self.centerXAnchor),
             confirmPasswordTextField.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width / 1.5),
-            confirmPasswordTextField.heightAnchor.constraint(equalToConstant: 25),
+            confirmPasswordTextField.heightAnchor.constraint(equalToConstant: 30),
             
             
             registerButton.topAnchor.constraint(equalTo: confirmPasswordTextField.bottomAnchor, constant: 20),

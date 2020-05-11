@@ -43,7 +43,7 @@ class TextField: UITextField {
         textField.textColor = textColor
         let imageView = UIImageView(image: UIImage(named: leftViewImage))
         imageView.frame = CGRect(x: 10, y: 0, width: 25 , height: 25)
-        let paddingView: UIView = UIView.init(frame: CGRect(x: 0, y: 0, width: 50, height: 25))
+        let paddingView: UIView = UIView.init(frame: CGRect(x: 0, y: 0, width: 50, height: 27))
         paddingView.addSubview(imageView)
         textField.leftViewMode = .always
         textField.leftView = paddingView
