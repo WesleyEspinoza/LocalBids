@@ -71,7 +71,7 @@ class RegisterView: UIView {
     
     // if the user hits cancel we want to animate back to the login view
     @objc func cancel(){
-//        delegate?.animateViewFrame(animation: .RegisterToLogin)
+        delegate?.animateViewTransitions(animation: .RegisterToLogin)
         emailTextField.text = ""
         passwordTextField.text = ""
         confirmPasswordTextField.text = ""
