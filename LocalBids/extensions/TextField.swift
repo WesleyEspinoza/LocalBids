@@ -42,8 +42,8 @@ class TextField: UITextField {
         textField.attributedPlaceholder = NSAttributedString(string: placeHolder, attributes: [NSAttributedString.Key.foregroundColor : textColor])
         textField.textColor = textColor
         let imageView = UIImageView(image: UIImage(named: leftViewImage))
-        imageView.frame = CGRect(x: 10, y: 2, width: 25 , height: 25)
-        let paddingView: UIView = UIView.init(frame: CGRect(x: 0, y: 0, width: 50, height: 30))
+        imageView.frame = CGRect(x: 10, y: 0, width: 25 , height: 25)
+        let paddingView: UIView = UIView.init(frame: CGRect(x: 0, y: 0, width: 50, height: 25))
         paddingView.addSubview(imageView)
         textField.leftViewMode = .always
         textField.leftView = paddingView

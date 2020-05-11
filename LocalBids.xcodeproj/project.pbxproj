@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		61A924562469B9E200774523 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A924552469B9E200774523 /* RegisterView.swift */; };
 		61B30F782448EA76005B7F8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B30F772448EA76005B7F8D /* AppDelegate.swift */; };
 		61B30F7A2448EA76005B7F8D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B30F792448EA76005B7F8D /* SceneDelegate.swift */; };
 		61B30F812448EA78005B7F8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61B30F802448EA78005B7F8D /* Assets.xcassets */; };
 		61B30F842448EA78005B7F8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61B30F822448EA78005B7F8D /* LaunchScreen.storyboard */; };
 		61B30F8F2448EA78005B7F8D /* LocalBidsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B30F8E2448EA78005B7F8D /* LocalBidsTests.swift */; };
 		61B30F9A24495596005B7F8D /* LoginSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B30F9924495596005B7F8D /* LoginSignUpViewController.swift */; };
-		61B30F9E244956DD005B7F8D /* loginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B30F9D244956DD005B7F8D /* loginView.swift */; };
+		61B30F9E244956DD005B7F8D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B30F9D244956DD005B7F8D /* LoginView.swift */; };
 		61B30FA1244A16E9005B7F8D /* UIColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B30FA0244A16E9005B7F8D /* UIColorExt.swift */; };
 		61B80746244A734E004EAF61 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B80745244A734E004EAF61 /* TextField.swift */; };
 		61B80748244A749C004EAF61 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B80747244A749C004EAF61 /* UIViewController.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		61A924552469B9E200774523 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		61B30F742448EA76005B7F8D /* LocalBids.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalBids.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61B30F772448EA76005B7F8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61B30F792448EA76005B7F8D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,7 +42,7 @@
 		61B30F8E2448EA78005B7F8D /* LocalBidsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalBidsTests.swift; sourceTree = "<group>"; };
 		61B30F902448EA78005B7F8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		61B30F9924495596005B7F8D /* LoginSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignUpViewController.swift; sourceTree = "<group>"; };
-		61B30F9D244956DD005B7F8D /* loginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginView.swift; sourceTree = "<group>"; };
+		61B30F9D244956DD005B7F8D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		61B30FA0244A16E9005B7F8D /* UIColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExt.swift; sourceTree = "<group>"; };
 		61B80745244A734E004EAF61 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		61B80747244A749C004EAF61 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
@@ -117,7 +119,8 @@
 		61B30F9C244956C9005B7F8D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				61B30F9D244956DD005B7F8D /* loginView.swift */,
+				61B30F9D244956DD005B7F8D /* LoginView.swift */,
+				61A924552469B9E200774523 /* RegisterView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -235,8 +238,9 @@
 				61B80748244A749C004EAF61 /* UIViewController.swift in Sources */,
 				61B30F782448EA76005B7F8D /* AppDelegate.swift in Sources */,
 				61B30F7A2448EA76005B7F8D /* SceneDelegate.swift in Sources */,
-				61B30F9E244956DD005B7F8D /* loginView.swift in Sources */,
+				61B30F9E244956DD005B7F8D /* LoginView.swift in Sources */,
 				61B80746244A734E004EAF61 /* TextField.swift in Sources */,
+				61A924562469B9E200774523 /* RegisterView.swift in Sources */,
 				61B30FA1244A16E9005B7F8D /* UIColorExt.swift in Sources */,
 				61B30F9A24495596005B7F8D /* LoginSignUpViewController.swift in Sources */,
 			);
